@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --darkGray1: #111;
+    --darkGray2: #222;
+    --darkGray3: #333;
+    --darkGray4: #444;
+    --red: #f00;
+    --blue: #00f;
+    --green: #0f0;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    /* background-color: var(--white); */
+}
+
+nav{
+    height: 50px;
+    border: 2px solid var(--white);
+    display: flex;
+}
+
+.logoBox{
+    width: 50px;
+    height: 100%;
+    border: 1px solid var(--green);
+    margin-right: auto;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    
+}
+@media screen and (min-width: 481px) {
+    
+}
+@media screen and (min-width: 720px) {
+    
+}
