@@ -50,6 +50,10 @@ nav div img{
     margin: auto;
 }
 
+.logo{
+    width: 60px;
+}
+
 nav div button{
     outline-color: transparent;
     background-color: transparent;
