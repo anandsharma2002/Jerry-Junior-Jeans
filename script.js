@@ -2,14 +2,19 @@ const body = document.querySelector("body")
 const menu = document.querySelector('.menu')
 const menulis = document.querySelectorAll('.menuli')
 const menulinks = document.querySelectorAll('.menulink')
+const story_section = document.querySelector('.story_section')
+const storyCardA = document.querySelectorAll(".storyCard_a")
+const story_circleImgs = document.querySelectorAll(".story_circle_img")
 const typeNameboys = document.querySelector('.typeNameBoys')
 const typeNamegirls = document.querySelector('.typeNameGirls')
 const typeNameBoys_animation = document.getElementById('typeNameBoys_animation')
+const typeNameButtons = document.querySelectorAll('.typeNameButton')
 
 
 
 
 body.style.backgroundColor = "var(--darkGray1)"
+// body.style.backgroundColor = "var(--white)"
 menu.style.display = "none"
 menulis.forEach(menuli => {
     menuli.style.backgroundColor = "var(--darkGray2)"
@@ -19,9 +24,18 @@ menulinks.forEach(menulink => {
 })
 typeNameboys.style.display = "block"
 typeNamegirls.style.display = "none"
+story_section.style.borderBottom = "2px solid var(--white)"
+storyCardA.forEach(storyCard_a => {
+    storyCard_a.style.color = "var(--white)"
+})
+story_circleImgs.forEach(story_circle_img => {
+    story_circle_img.style.border = "2px solid var(--white)"
+})
 
-
-
+typeNameButtons.forEach(typeNameButton => {
+    typeNameButton.style.color = "var(--blue)"
+    typeNameButton.style.borderBottom = "2px solid var(--blue)"
+})
 
 
 
@@ -37,6 +51,7 @@ function menubutton() {
     }
 }
 
+
 function darkmode() {
     if(body.style.backgroundColor == "var(--darkGray1)"){
         body.style.backgroundColor = "var(--white)"
@@ -48,6 +63,18 @@ function darkmode() {
         menulinks.forEach(menulink => {
             menulink.style.color = "var(--black)"
         })
+        storyCardA.forEach(storyCard_a => {
+            storyCard_a.style.color = "var(--black)"
+        })
+        story_circleImgs.forEach(story_circle_img => {
+            story_circle_img.style.border = "2px solid var(--black)"
+        })
+        story_section.style.borderBottom = "2px solid var(--black)"
+        typeNameButtons.forEach(typeNameButton => {
+            button.style.color = "var(--black)"
+        })
+
+
     }
     else{
         body.style.backgroundColor = "var(--darkGray1)"
@@ -59,6 +86,18 @@ function darkmode() {
         menulinks.forEach(menulink => {
             menulink.style.color = "var(--white)"
         })
+        storyCardA.forEach(storyCard_a => {
+            storyCard_a.style.color = "var(--white)"
+        })
+        story_circleImgs.forEach(story_circle_img => {
+            story_circle_img.style.border = "2px solid var(--white)"
+        })
+        story_section.style.borderBottom = "2px solid var(--white)"
+        typeNameButtons.forEach(typeNameButton => {
+            button.style.color = "var(--white)"
+        })
+        
+        
     }
 }
 

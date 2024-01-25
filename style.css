@@ -140,8 +140,8 @@ nav div button{
 .slide_imager1 img{
     width: 100%;
     max-height: 300px;
-    object-fit:contain;
-    border: 1px solid var(--white);
+    object-fit: fill;
+    /* border: 1px solid var(--white); */
 }
 
 @keyframes menu_animation1 {
@@ -158,8 +158,6 @@ nav div button{
 }
 
 .story_section{
-    border-bottom: 1px solid var(--white);
-    /* border-top: 1px solid var(--white); */
     display: flex;
     overflow-x: scroll;
     margin: 10px 5px;
@@ -182,7 +180,7 @@ nav div button{
 .story_circle{
     width: 75px;
     height: 75px;
-    /* border: 2px solid white;
+    /* border: 1px solid white;
     border-radius: 50%; */
     margin: auto;
 }
@@ -192,12 +190,12 @@ nav div button{
     height: 75px;
     object-fit: contain;
     border-radius: 50%;
-    border: 2px solid var(--white);
+    /* border: 2px solid var(--white); */
 }
 
 .story_card a{
     text-decoration: none;
-    color: var(--white);
+    /* color: var(--white); */
 }
 .story_card a p{
     text-align: center;
@@ -212,20 +210,18 @@ nav div button{
     margin: 10px 0px;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .typeName button{
     font-size: 20px;
     border: none;
-    border-bottom: 2px solid var(--white);
     padding: 5px 10px;
     background-color: transparent;
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 .typeNameContainer {
-    height: 830px;
+    height: 900px;
     /* border: 2px solid var(--blue); */
     padding: 10px 0px;
     position: relative;
@@ -244,7 +240,7 @@ nav div button{
     position: absolute;
     background-color: var(--darkGray1);
     z-index: 0;
-    /* animation-name: typeNameBoys_animation1; */
+    animation-name: typeNameBoys_animation1;
     animation-duration:  0.25s;
     animation-timing-function: linear;
 }
@@ -279,7 +275,7 @@ nav div button{
     position: absolute;
     background-color: var(--darkGray1);
     z-index: 0;
-    /* animation-name: typeNameGirls_animation1; */
+    animation-name: typeNameGirls_animation1;
     animation-duration:  0.25s;
     animation-timing-function: linear;
 }
@@ -312,18 +308,18 @@ nav div button{
     z-index: 1;
 }
 
-.typeNameUnderContainer div{
+.typeNameUnderContainer .typeNameCard{
     max-width: 45%;
     display: flex;
     flex-direction: column;
     /* border: 1px solid var(--green); */
-    background-color: var(--darkGray3);
+    background-color: var(--darkGray2);
     border-radius: 8px;    
 }
 .typeNameUnderContainer div img {
     /* border: 1px solid var(--red); */
     max-width: 100%;
-    border-radius: 8px 8px 0px 0px;  
+    border-radius: 8px 8px 0px 0px;
     /* height: auto; */
 }
 .typeNameUnderContainer div p {
@@ -331,14 +327,35 @@ nav div button{
     font-size: 18px;
     margin: auto;
     padding: 3px 0px;
-
 }
+
+.size_div {
+    /* border: 1px solid var(--white); */
+    display: flex;
+    flex-direction: row;
+    padding: 0px 3px;
+}
+
+.size_div p {
+    /* font-size: 15px; */
+    padding: 0px 5px;
+}
+.size_div p a {
+    font-size: 15px;
+    /* border: 1px solid var(--white); */
+    color: white;
+    padding: 0px 5px;
+}
+
+
 
 footer {
     /* border: 1px solid red; */
     padding: 0px 5px;
     padding-bottom: 10px;
-    background-color: var(--darkGray2);
+    background-color: var(--darkGray3);
+    position: relative;
+    margin-top: 15px;
 }
 
 .footer1 {
@@ -351,7 +368,7 @@ footer {
 .footer1 ul {
     max-width: 47%;
     list-style-type: none;
-    font-size: 17px;
+    font-size: 15px;
     /* border: 1px solid red; */
     margin: 20px 0px;
 }
@@ -367,6 +384,7 @@ footer {
 
 .footerli {
     font-weight: 600;
+    font-size: 17px;
     /* margin-bottom: 5px; */
 }
 
