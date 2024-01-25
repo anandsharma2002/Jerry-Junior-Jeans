@@ -242,7 +242,7 @@ nav div button{
     width: 100%;
     /* border: 1px solid var(--red); */
     position: absolute;
-    background-color: var(--darkGray2);
+    background-color: var(--darkGray1);
     z-index: 0;
     animation-name: typeNameBoys_animation1;
     animation-duration:  0.25s;
@@ -277,7 +277,7 @@ nav div button{
     width: 100%;
     /* border: 1px solid var(--red); */
     position: absolute;
-    background-color: var(--darkGray2);
+    background-color: var(--darkGray1);
     z-index: 0;
     animation-name: typeNameGirls_animation1;
     animation-duration:  0.25s;
