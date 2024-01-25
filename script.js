@@ -7,6 +7,8 @@ const typeNamegirls = document.querySelector('.typeNameGirls')
 const typeNameBoys_animation = document.getElementById('typeNameBoys_animation')
 
 
+
+
 body.style.backgroundColor = "var(--darkGray1)"
 menu.style.display = "none"
 menulis.forEach(menuli => {
@@ -18,8 +20,6 @@ menulinks.forEach(menulink => {
 typeNameboys.style.display = "block"
 typeNamegirls.style.display = "none"
 
-
-// typeNameBoys_animation.style.animationIterationCount = "infinite"
 
 
 
@@ -65,10 +65,14 @@ function darkmode() {
 function typeNameBoys() {
     typeNameboys.style.display = "block"
     typeNamegirls.style.display = "none"
-    // typeNameBoys_animation.style.animationPlayState = "play"
-    
+    // const typeNameAnimetion1 = setTimeout(myGreeting, 3000);
 }
 function typeNameGirls() {
     typeNameboys.style.display = "none"
     typeNamegirls.style.display = "block"
+}
+
+function myGreeting() {
+    typeNameboys.style.display = "block"
+    typeNamegirls.style.display = "none"
 }

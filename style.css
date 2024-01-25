@@ -230,7 +230,6 @@ nav div button{
 .typeNameBoys {
     position: absolute;
     top: 0px;
-    z-index: 1;
 }
 
 #typeNameBoys_animation {
@@ -239,12 +238,10 @@ nav div button{
     /* border: 1px solid var(--red); */
     position: absolute;
     background-color: var(--darkGray2);
-    display: none;
     z-index: 0;
     animation-name: typeNameBoys_animation1;
-    animation-duration:  2s;
+    animation-duration:  0.3s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 @keyframes typeNameBoys_animation1 {
@@ -258,7 +255,8 @@ nav div button{
         display: block;
     }
     100%{
-        left: 0%;
+        left: -100%;
+        display: none;
     }
 }
 
@@ -275,7 +273,6 @@ nav div button{
     /* border: 1px solid var(--red); */
     position: absolute;
     background-color: var(--darkGray2);
-    display: none;
     z-index: 0;
     animation-name: typeNameGirls_animation1;
     animation-duration:  0.3s;
@@ -284,7 +281,7 @@ nav div button{
 
 @keyframes typeNameGirls_animation1 {
     0%{
-        left: 0%;
+        left: -100%;
         z-index: 2;
         display: block;
     }
@@ -294,6 +291,7 @@ nav div button{
     }
     100%{
         left: 100%;
+        display: none;
     }
 }
 
@@ -301,11 +299,12 @@ nav div button{
 .typeNameUnderContainer{
     /* height: 300px; */
     /* border: 1px solid var(--white); */
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     margin: 10px 0px;
     /* flex-direction: column; */
-    /* z-index: 2; */
+    z-index: 1;
 }
 
 .typeNameUnderContainer div{
