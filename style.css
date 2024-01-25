@@ -25,10 +25,11 @@ body{
 
 
 nav{
-    height: 50px;
+    /* height: 50px; */
     /* border: 2px solid var(--white); */
     display: flex;
     background-color: var(--darkGray2);
+    padding: 4px 0;
 }
 
 nav div{
@@ -51,7 +52,7 @@ nav div img{
 }
 
 .logo{
-    width: 60px;
+    width: 50px;
 }
 
 nav div button{
@@ -127,6 +128,17 @@ nav div button{
     z-index: 0;
 }
 
+.slide_imager1 {
+    height: 300px;
+    /* border: 1px solid var(--white); */
+}
+.slide_imager1 img{
+    width: 100%;
+    max-height: 300px;
+    object-fit:contain;
+    border: 1px solid var(--white);
+}
+
 @keyframes menu_animation1 {
     0%{
         left: 0%;
@@ -138,8 +150,190 @@ nav div button{
     100%{
         left: 100%;
     }
+}
+
+.story_section{
+    border-bottom: 1px solid var(--white);
+    /* border-top: 1px solid var(--white); */
+    display: flex;
+    overflow-x: scroll;
+    margin: 10px 5px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.story_section::-webkit-scrollbar{
+    width: 0px;
+}
+
+.story_card {
+    height: 100%;
+    /* border: 1px solid var(--blue); */
+    padding: 0px 5px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.story_circle{
+    width: 75px;
+    height: 75px;
+    /* border: 2px solid white;
+    border-radius: 50%; */
+    margin: auto;
+}
+
+.story_circle img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+
+.story_card a{
+    text-decoration: none;
+    color: var(--white);
+}
+.story_card a p{
+    text-align: center;
+    margin: 5px 0px;
+}
+
+
+
+
+.typeName {
+    /* border: 1px solid var(--blue); */
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.typeName button{
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid var(--white);
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--white);
+}
+
+.typeNameContainer {
+    height: 830px;
+    /* border: 2px solid var(--blue); */
+    padding: 10px 0px;
+    position: relative;
+}
+
+
+.typeNameBoys {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+#typeNameBoys_animation {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid var(--red); */
+    position: absolute;
+    background-color: var(--darkGray2);
+    display: none;
+    z-index: 0;
+    animation-name: typeNameBoys_animation1;
+    animation-duration:  2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typeNameBoys_animation1 {
+    0%{
+        left: 100%;
+        z-index: 2;
+        display: block;
+    }
+    99%{
+        z-index: 2;
+        display: block;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+.typeNameGirls {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+#typeNameGirls_animation {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid var(--red); */
+    position: absolute;
+    background-color: var(--darkGray2);
+    display: none;
+    z-index: 0;
+    animation-name: typeNameGirls_animation1;
+    animation-duration:  0.3s;
+    animation-timing-function: linear;
+}
+
+@keyframes typeNameGirls_animation1 {
+    0%{
+        left: 0%;
+        z-index: 2;
+        display: block;
+    }
+    99%{
+        z-index: 2;
+        display: block;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.typeNameUnderContainer{
+    /* height: 300px; */
+    /* border: 1px solid var(--white); */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    /* flex-direction: column; */
+    /* z-index: 2; */
+}
+
+.typeNameUnderContainer div{
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid var(--green); */
+    background-color: var(--darkGray3);
+    border-radius: 8px;    
+}
+.typeNameUnderContainer div img {
+    /* border: 1px solid var(--red); */
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0px;  
+    /* height: auto; */
+}
+.typeNameUnderContainer div p {
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    padding: 3px 0px;
 
 }
+
+
+
+
+
 
 
 

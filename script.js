@@ -2,6 +2,9 @@ const body = document.querySelector("body")
 const menu = document.querySelector('.menu')
 const menulis = document.querySelectorAll('.menuli')
 const menulinks = document.querySelectorAll('.menulink')
+const typeNameboys = document.querySelector('.typeNameBoys')
+const typeNamegirls = document.querySelector('.typeNameGirls')
+const typeNameBoys_animation = document.getElementById('typeNameBoys_animation')
 
 
 body.style.backgroundColor = "var(--darkGray1)"
@@ -12,6 +15,12 @@ menulis.forEach(menuli => {
 menulinks.forEach(menulink => {
     menulink.style.color = "var(--white)"
 })
+typeNameboys.style.display = "block"
+typeNamegirls.style.display = "none"
+
+
+// typeNameBoys_animation.style.animationIterationCount = "infinite"
+
 
 
 
@@ -51,4 +60,15 @@ function darkmode() {
             menulink.style.color = "var(--white)"
         })
     }
+}
+
+function typeNameBoys() {
+    typeNameboys.style.display = "block"
+    typeNamegirls.style.display = "none"
+    // typeNameBoys_animation.style.animationPlayState = "play"
+    
+}
+function typeNameGirls() {
+    typeNameboys.style.display = "none"
+    typeNamegirls.style.display = "block"
 }
