@@ -30,7 +30,7 @@ body{
 }
 nav{
     /* height: 50px; */
-    /* border: 2px solid var(--white); */
+    border-bottom: 1px solid var(--white);
     display: flex;
     background-color: var(--darkGray2);
     padding: 4px 0;
@@ -244,7 +244,7 @@ nav div button{
     position: absolute;
     background-color: var(--darkGray1);
     z-index: 0;
-    animation-name: typeNameBoys_animation1;
+    /* animation-name: typeNameBoys_animation1; */
     animation-duration:  0.25s;
     animation-timing-function: linear;
 }
@@ -279,7 +279,7 @@ nav div button{
     position: absolute;
     background-color: var(--darkGray1);
     z-index: 0;
-    animation-name: typeNameGirls_animation1;
+    /* animation-name: typeNameGirls_animation1; */
     animation-duration:  0.25s;
     animation-timing-function: linear;
 }
@@ -334,11 +334,66 @@ nav div button{
 
 }
 
+footer {
+    /* border: 1px solid red; */
+    padding: 0px 5px;
+    padding-bottom: 10px;
+    background-color: var(--darkGray2);
+}
 
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    padding: 0px 8px;
+}
 
+.footer1 ul {
+    max-width: 47%;
+    list-style-type: none;
+    font-size: 17px;
+    /* border: 1px solid red; */
+    margin: 20px 0px;
+}
 
+.footer1 ul li {
+    padding: 8px 0px;
+    /* text-align: center; */
+}
 
+.footer1 ul li a{
+    color: white;
+}
 
+.footerli {
+    font-weight: 600;
+    /* margin-bottom: 5px; */
+}
+
+.footer2 {
+    /* border: 1px solid white; */
+    padding: 0px 8px;
+}
+
+.followus {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social_media {
+    display: flex;
+    /* border: 1px solid var(--blue); */
+    margin: 10px 0px;
+}
+
+.social_media div {
+    /* margin: 0px 8px; */
+    margin-right: 8px;
+}
+.social_media div img{
+    width: 50px;
+    /* border: 1px solid var(--green); */
+}
 
 
 @media screen and (max-width: 480px) {
@@ -350,3 +405,5 @@ nav div button{
 @media screen and (min-width: 720px) {
     
 }
+
+
