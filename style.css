@@ -221,7 +221,7 @@ nav div button{
 }
 
 .typeNameContainer {
-    height: 900px;
+    /* height: 100%; */
     /* border: 2px solid var(--blue); */
     padding: 10px 0px;
     position: relative;
@@ -229,7 +229,7 @@ nav div button{
 
 
 .typeNameBoys {
-    position: absolute;
+    position: relative;
     top: 0px;
 }
 

@@ -33,8 +33,8 @@ story_circleImgs.forEach(story_circle_img => {
 })
 
 typeNameButtons.forEach(typeNameButton => {
-    typeNameButton.style.color = "var(--blue)"
-    typeNameButton.style.borderBottom = "2px solid var(--blue)"
+    typeNameButton.style.color = "var(--white)"
+    typeNameButton.style.borderBottom = "2px solid var(--white)"
 })
 
 
@@ -73,7 +73,10 @@ function darkmode() {
         typeNameButtons.forEach(typeNameButton => {
             button.style.color = "var(--black)"
         })
-
+        typeNameButtons.forEach(typeNameButton => {
+            typeNameButton.style.color = "var(--black)"
+            typeNameButton.style.borderBottom = "2px solid var(--black)"
+        })
 
     }
     else{
@@ -96,8 +99,11 @@ function darkmode() {
         typeNameButtons.forEach(typeNameButton => {
             button.style.color = "var(--white)"
         })
-        
-        
+        typeNameButtons.forEach(typeNameButton => {
+            typeNameButton.style.color = "var(--white)"
+            typeNameButton.style.borderBottom = "2px solid var(--white)"
+        })
+
     }
 }
 
