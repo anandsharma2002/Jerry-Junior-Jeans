@@ -240,7 +240,7 @@ nav div button{
     background-color: var(--darkGray2);
     z-index: 0;
     animation-name: typeNameBoys_animation1;
-    animation-duration:  0.3s;
+    animation-duration:  0.25s;
     animation-timing-function: linear;
 }
 
@@ -275,7 +275,7 @@ nav div button{
     background-color: var(--darkGray2);
     z-index: 0;
     animation-name: typeNameGirls_animation1;
-    animation-duration:  0.3s;
+    animation-duration:  0.25s;
     animation-timing-function: linear;
 }
 

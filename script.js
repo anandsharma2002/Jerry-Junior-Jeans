@@ -65,14 +65,8 @@ function darkmode() {
 function typeNameBoys() {
     typeNameboys.style.display = "block"
     typeNamegirls.style.display = "none"
-    // const typeNameAnimetion1 = setTimeout(myGreeting, 3000);
 }
 function typeNameGirls() {
     typeNameboys.style.display = "none"
     typeNamegirls.style.display = "block"
-}
-
-function myGreeting() {
-    typeNameboys.style.display = "block"
-    typeNamegirls.style.display = "none"
 }
